@@ -9,7 +9,7 @@ namespace Data
         {
         }
 
-        public DbSet<Producto> Productos { get; set; }
+        public DbSet<Estudiante> Estudiantes { get; set; }
     }
 }
 

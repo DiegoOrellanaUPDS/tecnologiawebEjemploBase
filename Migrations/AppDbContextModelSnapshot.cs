@@ -21,7 +21,7 @@ namespace proyecto.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Modelos.Producto", b =>
+            modelBuilder.Entity("Modelos.Estudiante", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -29,16 +29,16 @@ namespace proyecto.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    b.Property<decimal>("Ci")
+                        .HasColumnType("numeric");
+
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<decimal>("Precio")
-                        .HasColumnType("numeric");
-
                     b.HasKey("Id");
 
-                    b.ToTable("Productos");
+                    b.ToTable("Estudiantes");
                 });
 #pragma warning restore 612, 618
         }

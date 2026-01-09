@@ -2,12 +2,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Modelos
 {
-    public class Producto
+    public class Estudiante
     {
         [Key]
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public decimal Precio { get; set; }
+        public decimal Ci { get; set; }
     }
 }
 
