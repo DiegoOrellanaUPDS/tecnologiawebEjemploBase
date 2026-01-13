@@ -32,6 +32,10 @@ namespace proyecto.Migrations
                     b.Property<decimal>("Ci")
                         .HasColumnType("numeric");
 
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("text");
